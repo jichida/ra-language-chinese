@@ -1,6 +1,7 @@
 module.exports = {
     ra: {
         action: {
+			clear_input_value:'清空',
             delete: '删除',
             show: '查看',
             list: '列表',
@@ -17,13 +18,17 @@ module.exports = {
             remove_filter: '移除检索',
             back: '回退',
             bulk_actions: '选中%{smart_count}项',
-        },
+			clone:'复制',
+			export:'导出',
+			search: '搜索'
+		},
         boolean: {
             true: '是',
             false: '否',
         },
         page: {
             list: '%{name} 列表',
+			error: '发生错误了',
             edit: '%{name} #%{id}',
             show: '%{name} #%{id}',
             create: '新建 %{name}',
@@ -66,6 +71,9 @@ module.exports = {
                 '删除 %{name} |||| 删除 %{smart_count}项 %{name} ',
             bulk_delete_content:
                 '您确定要删除 %{name}? |||| 您确定要删除 %{smart_count} 项?',
+			details:'详情',
+			error:
+                "客户端发生了一个错误,您的请求未完成.",
         },
         navigation: {
             no_results: '结果为空',
@@ -75,10 +83,12 @@ module.exports = {
             page_out_from_end: '已到最末页',
             page_out_from_begin: '已到最前页',
             page_range_info: '%{offsetBegin}-%{offsetEnd} / %{total}',
+			page_rows_per_page:'每页个数',
             next: '向后',
             prev: '向前',
         },
         auth: {
+			user_menu:'个人信息',
             username: '用户名',
             password: '密码',
             sign_in: '登录',
@@ -92,6 +102,7 @@ module.exports = {
             bad_item: '不正确的条目',
             item_doesnt_exist: '条目不存在',
             http_error: '与服务通信出错',
+			data_provider_error:'数据提供错误',
             canceled: '取消动作',
         },
         validation: {
